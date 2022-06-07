@@ -50,4 +50,11 @@ nav> a {
   justify-content: center;
 }
 
+@media (max-width: 600px)
+{
+  *{
+    font-size: 9px;
+  }
+}
+
 </style>
