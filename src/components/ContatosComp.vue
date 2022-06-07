@@ -22,7 +22,7 @@
 <script>
 
 export default {
-    components: {
+components: {
  
     },
 methods:{
@@ -30,9 +30,6 @@ methods:{
         this.$store.commit('delContato', index)
     }
 },
-watch: {
-
-}
 }
 
 </script>

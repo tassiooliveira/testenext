@@ -33,6 +33,7 @@ export default {
         email: '',
         numero: '',
         errocampos: false,
+        lscontatos: ''
         }
        
     },
@@ -56,10 +57,11 @@ export default {
         this.email = ''
         this.numero = ''
         
-    }
-    }
+    },
     
-}
+    
+    
+}}
 </script>
 
 <style scoped>

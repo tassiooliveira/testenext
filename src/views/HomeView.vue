@@ -12,6 +12,12 @@ export default {
   components: {
     ContatosComp
   },
-
+  mounted() {
+      if (localStorage.getItem('contatos')) {
+        console.log(JSON.parse(localStorage.getItem('contatos')))
+        this.$store.commit('getLocalStorage', JSON.parse(localStorage.getItem('contatos')))
+        ;
+    }
+    }
 }
 </script>

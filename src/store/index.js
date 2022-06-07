@@ -9,12 +9,9 @@ export default createStore({
   getters: {
   },
   mutations: {
-    getLocalStorage(state){
-      if(localStorage.getItem('contatos') === ''){
-        state.contatos = []
-      }else{
-        state.contatos = JSON.parse(localStorage.getItem('contatos'))
-      }
+    getLocalStorage(state, payload){
+      console.log(payload)
+      state.contatos = payload
     },
     saveContato(state, payload){
       
